@@ -7,8 +7,6 @@ def test_open_saucedemo(driver):
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-    driver.save_screenshot(
-        f"screenshots/saucedemo_{timestamp}.png"
-    )
+    driver.save_screenshot(f"screenshots/saucedemo_{timestamp}.png")
 
     assert "Swag Labs" in driver.title
